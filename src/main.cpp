@@ -3,8 +3,8 @@
 #include "../include/textgen.h"
 
 int main() {
-    const int NPREF=2; // количество слов в префиксе
-    const int MAXGEN=1000; //объем текста на выходе
+    const int NPREF = 2; // количество слов в префиксе
+    const int MAXGEN = 1000; //объем текста на выходе
 
     std::wstring text = L"In fields of gold, the flowers sway,\n"
                         "Dancing gently in the breeze all day,\n"

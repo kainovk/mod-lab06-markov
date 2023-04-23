@@ -12,8 +12,7 @@ typedef std::deque<std::wstring> prefix;
 typedef std::vector<std::wstring> suffix;
 
 class MarkovTextGenerator {
-
-public:
+ public:
     explicit MarkovTextGenerator(const std::wstring& text, int nPref = 2);
 
     explicit MarkovTextGenerator(std::map<prefix, suffix> table);
@@ -22,8 +21,9 @@ public:
 
     std::map<prefix, suffix> GetTable();
 
-private:
+ private:
     std::map<prefix, suffix> table;
 };
 
-std::vector<std::wstring> split(const std::wstring &s, const std::wstring &delimiter);
+std::vector<std::wstring> split(const std::wstring &s,
+                                const std::wstring &delimiter);

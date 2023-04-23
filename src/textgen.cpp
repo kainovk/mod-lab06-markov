@@ -48,7 +48,8 @@ std::wstring MarkovTextGenerator::GenerateText(int maxLen) {
     return text;
 }
 
-std::vector<std::wstring> split(const std::wstring &s, const std::wstring &delimiter) {
+std::vector<std::wstring> split(const std::wstring &s,
+                                const std::wstring &delimiter) {
     size_t pos_start = 0, pos_end, delim_len = delimiter.length();
     std::wstring token;
     std::vector<std::wstring> res;
